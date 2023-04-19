@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    /* FONT */
+    --FF: 'Overpass', sans-serif;
+    --FS: 15px;
+    --FW-NORMAL: 400;
+    --FW-BOLD: 700;
+    /* COLORS */
+    --BTN-COLOR: hsl(25, 97%, 53%);
+    --HEADING-COLOR: hsl(0, 0%, 100%);
+    --PARA-COLOR: hsl(217, 12%, 63%);
+    --MEDIUM-GREY: hsl(216, 12%, 54%);
+    --DARK-BLUE: hsl(213, 19%, 18%);
+    --VERY-DARK-BLUE: hsl(216, 12%, 8%);
 }
 
 .attribution {
