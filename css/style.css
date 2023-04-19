@@ -12,6 +12,7 @@
     --FS: 15px;
     --FW-NORMAL: 400;
     --FW-BOLD: 700;
+    --FONT: var(--FW-NORMAL) var(--FS) var(--FF);
     /* COLORS */
     --BTN-COLOR: hsl(25, 97%, 53%);
     --HEADING-COLOR: hsl(0, 0%, 100%);
@@ -21,7 +22,18 @@
     --VERY-DARK-BLUE: hsl(216, 12%, 8%);
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 1rem;
+    font: var(--FONT);
+    background-color: var(--VERY-DARK-BLUE);
+}
+
 .attribution {
+    display: none;
     font-size: 11px;
     text-align: center;
 }
