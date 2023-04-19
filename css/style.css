@@ -26,10 +26,23 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
-    text-align: center;
     padding: 1rem;
     font: var(--FONT);
+    color: var(--PARA-COLOR);
     background-color: var(--VERY-DARK-BLUE);
+}
+
+main {
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+.page {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid blue;
+    gap: 1rem;
 }
 
 .attribution {
