@@ -21,6 +21,13 @@ const initApp = () => {
             selectedEl.classList.add('selected');
             rate = selectedEl.textContent;
         }
+
+        const ratingSectionEl = ratingSection.children;
+        for (let index = 0; index < ratingSectionEl.length; index++) {
+            const el = ratingSectionEl[index];
+            if (el !== selectedEl && el.classList.contains('selected'))
+                el.classList.remove('selected');
+        }
     })
 
     submitEl.addEventListener('click', (event) => {
