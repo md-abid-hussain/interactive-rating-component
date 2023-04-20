@@ -34,6 +34,15 @@ const initApp = () => {
         if (isSelected) {
             finalRating.textContent = rate;
             secondPage.style.display = 'flex';
+            secondPage.animate([
+                {
+                    opacity: 0,
+                },
+                {
+                    opacity: 1,
+                },
+            ],
+                1000);
             firstPage.style.display = 'none';
         } else {
             alert('Please select rating');
