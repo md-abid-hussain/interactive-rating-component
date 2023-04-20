@@ -15,6 +15,7 @@ button {
     outline: transparent;
     border: transparent;
     padding: 0.5rem;
+    color: inherit
 }
 
 :root {
@@ -28,7 +29,6 @@ button {
     --BTN-COLOR: hsl(25, 97%, 53%);
     --HEADING-COLOR: hsl(0, 0%, 100%);
     --PARA-COLOR: hsl(217, 12%, 63%);
-    --MEDIUM-GREY: hsl(216, 12%, 54%);
     --DARK-BLUE: hsl(213, 19%, 18%);
     --VERY-DARK-BLUE: hsl(216, 12%, 8%);
 }
@@ -46,9 +46,8 @@ body {
 main {
     max-width: 375px;
     padding: 1.25rem;
-    border: 1px solid red;
+    background: linear-gradient(var(--DARK-BLUE), rgba(34, 42, 53, 255));
     border-radius: 1.5rem;
-    background-color: var(--DARK-BLUE);
 }
 
 h1,
@@ -59,16 +58,14 @@ h3 {
 .page {
     display: flex;
     flex-flow: column;
-    /* border: 1px solid blue; */
     gap: 1rem;
 }
 
 .first-page figure {
     max-width: fit-content;
-    border: 1px solid orange;
     padding: .75rem;
     border-radius: 50%;
-    background-color: orange;
+    background-color: hsl(211, 20%, 21%);
     margin-block-end: 0.5rem;
 }
 
@@ -78,48 +75,61 @@ h3 {
     justify-content: space-between;
 }
 
-.first-page .rating {
+.rating {
     display: grid;
     place-content: center;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    background-color: var(--MEDIUM-GREY);
+    background-color: hsl(211, 20%, 21%);
+    ;
 }
 
-.first-page .rating:hover {
+.rating:hover {
     background-color: var(--BTN-COLOR);
+    color: white;
+}
+
+.selected {
+    background-color: var(--PARA-COLOR);
+    color: white;
 }
 
 .first-page>button {
     border-radius: 1rem;
+    background-color: var(--BTN-COLOR);
+    color: white;
+    text-transform: uppercase;
 }
 
-/* .first-page {
-     display: none;
-} */
+.first-page>button:hover {
+    background-color: white;
+    color: var(--BTN-COLOR);
+}
 
 .second-page {
     display: none;
     text-align: center;
 }
 
-.second-page h2 {
+h2 {
     font: inherit;
     border-radius: 30px;
     text-align: center;
     max-width: fit-content;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid grey;
+    padding: 0.35rem 0.5rem;
+    background-color: hsl(211, 20%, 21%);
     color: var(--BTN-COLOR);
     margin-inline: auto;
 }
 
 .second-page img {
     margin-inline: auto;
+    margin-block: 0.75rem 0.5rem;
 }
 
-.second-page>h3 {
+h3 {
+    margin-top: 0.25rem;
     text-align: center;
     font-size: 1.5rem;
 }
