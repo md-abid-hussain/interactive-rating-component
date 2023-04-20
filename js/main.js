@@ -15,9 +15,11 @@ const initApp = () => {
 
     let rate = undefined;
     ratingSection.addEventListener('click', (event) => {
-        if (event.target !== ratingSection) {
+        const selectedEl = event.target;
+        if (selectedEl !== ratingSection) {
             isSelected = true;
-            rate = event.target.textContent;
+            selectedEl.classList.add('selected');
+            rate = selectedEl.textContent;
         }
     })
 
