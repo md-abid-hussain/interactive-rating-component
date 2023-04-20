@@ -47,7 +47,7 @@ body {
 main {
     max-width: 390px;
     padding: 1.5rem;
-    background: linear-gradient(var(--DARK-BLUE), rgba(34, 42, 53, 255));
+    background: linear-gradient(var(--DARK-BLUE), hsl(212, 20%, 13%));
     border-radius: 1.5rem;
 }
 
